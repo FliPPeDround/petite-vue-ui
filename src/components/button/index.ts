@@ -1,4 +1,6 @@
 import './button.scss'
+import {getButtonAttr} from './getButtonAttr'
+getButtonAttr()
 
 export const pvButton = (props: buttonProps) => {
   if (!props) {

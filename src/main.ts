@@ -24,7 +24,12 @@ const store = reactive({
     Vmodel: 'store.switchOn'
   })
 })
+const printA = () => {
+  console.log('A')
+}
 
 createApp({
-  store
+  // store,
+  pvButton,
+  printA
 }).mount()
