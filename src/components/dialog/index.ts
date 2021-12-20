@@ -1,4 +1,7 @@
 import './dialog.scss'
+import {getDialogAttr} from './getDialogAttr'
+
+getDialogAttr()
 
 export const pvDialog = (props:dialogProps) => {
   if (!props) {

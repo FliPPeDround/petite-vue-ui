@@ -31,5 +31,6 @@ const printA = () => {
 createApp({
   // store,
   pvButton,
-  printA
+  printA,
+  pvDialog
 }).mount()

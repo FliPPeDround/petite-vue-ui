@@ -4,7 +4,7 @@ import { resolve } from 'path'
 export default defineConfig({
   build: {
     target: 'esnext',
-    // minify: false,
+    minify: false,
     lib: {
       entry: resolve(__dirname, 'src/components/index.ts'),
       name: 'PetiteVueUi',
