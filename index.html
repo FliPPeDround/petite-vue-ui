@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
   </head>
   <body>
     <div v-scope>
@@ -13,11 +14,15 @@
       <div v-scope="store.input"></div>
       <div v-scope="store.switch"></div> -->
       <pv-button>你好</pv-button>
-      <pv-button icon="pv-icon-like" type="success" border="circle" onclick="opendialog"></pv-button>
+      <pv-button icon="mdi:tooltip" type="success" border="circle" onclick="opendialog"></pv-button>
       <pv-dialog title="Dialogtitle" visible="visible.value">
         <template id="body">
           <h1>123</h1>
           <span>123</span>
+          <pv-button>取消</pv-button>
+        </template>
+        <template id="footer">
+          <pv-button>取消</pv-button>
         </template>
       </pv-dialog>
     </div>

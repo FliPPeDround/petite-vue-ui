@@ -16,7 +16,7 @@ export const pvButton = (props: buttonProps) => {
 
   const icon =  {
     show: props.icon ? true : false,
-    value: props.icon ? ` ${props.icon}` : ''
+    value: props.icon ? props.icon : ''
   }
 
   const title = props.title ? ` title="${props.title}"` : ''
@@ -27,7 +27,7 @@ export const pvButton = (props: buttonProps) => {
   const click = props.click ? ` @click = '${props.click}'` : ''
   return {
     $template: `<button class="pv-button${type}${border}${disabled}"${title}${disabled}${click}>
-                  <i class="iconfont${icon.value}" v-if="${icon.show}"></i>
+                  <i class="iconify" v-if="${icon.show}" data-icon="${icon.value}" data-inline="false"></i>
                   <span v-if="${slot.show}">${slot.value}</span>
                 </button>`
   }

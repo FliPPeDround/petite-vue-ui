@@ -37,8 +37,8 @@ const opendialog = () => {
 
 createApp({
   // store,
-  pvButton,
   opendialog,
   pvDialog,
-  visible
+  visible,
+  pvButton,
 }).mount()

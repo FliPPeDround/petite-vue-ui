@@ -38,7 +38,7 @@ export const pvDialog = (props:dialogProps) => {
         <div class="pv-dialog__header">
           <span class="pv-dialog__title">${titleSlot}</span>
           <button class="pv-dialog__headerbtn"${clickVisible}${showClose}>
-            <span class="iconfont pv-icon-close"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ion" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="currentColor" d="M340.2 160l-84.4 84.3-84-83.9-11.8 11.8 84 83.8-84 83.9 11.8 11.7 84-83.8 84.4 84.2 11.8-11.7-84.4-84.3 84.4-84.2z"></path></svg>
           </button>
         </div>
         <div class="pv-dialog__body">
